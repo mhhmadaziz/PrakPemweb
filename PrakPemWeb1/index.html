@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praktikum 1</title>
+    <style>
+      * {
+        scroll-behavior: smooth;
+      }
+      table {
+        border: 1px solid black;
+      }
+      td,
+      th {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="profil.jpg" alt="profile picture" width="100" />
+      <h1>Halo Saya Muhammad Nur Aziz</h1>
+      <p>Saya adalah mahasiswa Insitut Teknologi Sumatera</p>
+      <nav>
+        <ul>
+          <li><a href="#tentang">About Me</a></li>
+          <li><a href="#pengalaman">My Experience</a></li>
+          <li><a href="#hubungi">Contact Person</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article id="tentang">
+        <h2>Tentang saya</h2>
+        <p>
+          Nama saya Muhammad Nur Aziz, saya adalah seorang mahasiswa di
+          Institute Teknologi Sumatera. Saat ini saya sedang menempuh semester
+          5, dan mengambil mata kuliah Pemograman Web. Saya memiliki
+          ketertarikan di bidang Web karena saya ingin menjadi Front End.
+        </p>
+
+        <figure>
+          <video controls>
+            <source src="vid1.mp4" type="video/mp4" />
+          </video>
+          <figcaption>Video saya</figcaption>
+        </figure>
+      </article>
+
+      <article id="pengalaman">
+        <h2>Pengalaman</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th rowspan="2">No</th>
+              <th rowspan="2">Deskripsi</th>
+              <th colspan="2">Tahun</th>
+            </tr>
+            <tr>
+              <th>Mulai</th>
+              <th>Selesai</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Jambore Daerah Lampung</td>
+              <td>2017</td>
+              <td>2017</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Ketua PIK-R di SMAN 1 Kalianda</td>
+              <td>2018</td>
+              <td>2019</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Sekretaris RISMA Desa Margodadi</td>
+              <td>2021</td>
+              <td>Sekarang</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Sekretaris Muli Meghanai Margodai</td>
+              <td>2021</td>
+              <td>Sekarang</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article id="hubungi">
+        <h2>Hubungi saya</h2>
+        <form action="get">
+          <label for="nama">Nama : </label>
+          <input type="text" name="nama" id="nama" /><br /><br />
+
+          <p>Jenis Kelamin</p>
+          <br />
+          <input
+            type="radio"
+            name="jenis_kelamin"
+            value="laki-laki"
+            id="laki"
+          />
+          <label for="laki">Laki-Laki</label><br />
+          <input
+            type="radio"
+            name="jenis_kelamin"
+            value="perempuan"
+            id="perempuan"
+          />
+          <label for="perempuan">Perempuan</label><br /><br />
+
+          <label>Pilih media sosial jika ingin berinteraksi dengan saya</label>
+          <br />
+          <input
+            type="checkbox"
+            name="media_sosial"
+            value="facebook"
+            id="facebook"
+          />
+          <label for="facebook">Facebook</label><br />
+          <input
+            type="checkbox"
+            name="media_sosial"
+            value="twitter"
+            id="twitter"
+          />
+          <label for="twitter">Twitter</label><br />
+          <input
+            type="checkbox"
+            name="media_sosial"
+            value="instagram"
+            id="instagram"
+          />
+          <label for="instagram">Instagram</label><br /><br />
+
+          <label for="pesan">Pesan : </label>
+          <br />
+          <textarea name="pesan" id="pesan" cols="30" rows="10"></textarea>
+
+          <br />
+          <input type="submit" value="Kirim" />
+        </form>
+      </article>
+    </main>
+    <footer>
+      <p>
+        &copy; 2022
+        <a href="https://github.com/mhhmadaziz">Muhammad Nur Aziz </a>
+      </p>
+    </footer>
+  </body>
+</html>
